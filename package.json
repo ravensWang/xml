@@ -1,0 +1,27 @@
+   {
+  "name": "@svon/xml",
+  "version": "1.0.0",
+  "description": "A simple http based on axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svon/xml.git"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "ajax"
+  ],
+  "author": "svon <svon.me@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svon/xml/issues"
+  },
+  "homepage": "https://github.com/svon/xml#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
