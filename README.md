@@ -11,7 +11,7 @@ Using npm:
 
 In Node.js:
 
-	import Server from '@svon/xml'
+	import XML from '@svon/xml'
 	const ajax = XML.Ajax()
 
 	async function test() {
