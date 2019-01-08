@@ -51,10 +51,14 @@
         }, option || {})
         const http = new Http(baseURL, option);
         http.interceptors.response.use(function(response){
-            if (response.code === opt.success) {
-                return response.data;
+            if (response.code || response.code === 0) {
+                if (response.code === opt.success) {
+                    return response.data;
+                }
+                return Promise.reject(response);  
+            } else {
+                return response;
             }
-            return Promise.reject(response);
         }, function(error){
             if (error) {
                 return Promise.reject(error.response);  
